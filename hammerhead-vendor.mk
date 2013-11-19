@@ -17,3 +17,4 @@
 $(call inherit-product-if-exists, vendor/lge/hammerhead/broadcom/broadcom.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/lge/lge.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/qcom/qcom.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/others/others.mk)
