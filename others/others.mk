@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/others/dxhdcp2.b03:system/vendor/firmware/discretix/dxhdcp2.b03 \
     vendor/lge/hammerhead/others/dxhdcp2.mdt:system/vendor/firmware/discretix/dxhdcp2.mdt \
     vendor/lge/hammerhead/others/libAKM8963.so:system/vendor/lib/libAKM8963.so \
-    vendor/lge/hammerhead/others/vlibDxHdcp.so:system/vendor/lib/libDxHdcp.so \
+    vendor/lge/hammerhead/others/libDxHdcp.so:system/vendor/lib/libDxHdcp.so \
     vendor/lge/hammerhead/others/libvdmengine.so:system/vendor/lib/libvdmengine.so \
     vendor/lge/hammerhead/others/libvdmfumo.so:system/vendor/lib/libvdmfumo.so \
     vendor/lge/hammerhead/others/libvss_common_core.so:system/vendor/lib/libvss_common_core.so \
