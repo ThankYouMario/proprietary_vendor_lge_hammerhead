@@ -20,8 +20,10 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/others/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/lge/hammerhead/others/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/hammerhead/others/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/lge/hammerhead/others/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/lge/hammerhead/others/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/lge/hammerhead/others/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/lge/hammerhead/others/widevine.b00:system/vendor/firmware/widevine.b00 \
     vendor/lge/hammerhead/others/widevine.b01:system/vendor/firmware/widevine.b01 \
     vendor/lge/hammerhead/others/widevine.b02:system/vendor/firmware/widevine.b02 \
     vendor/lge/hammerhead/others/widevine.b03:system/vendor/firmware/widevine.b03 \
