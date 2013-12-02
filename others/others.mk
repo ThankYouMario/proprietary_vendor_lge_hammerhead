@@ -16,9 +16,6 @@
 # Other blob(s) necessary for Hammerhead hardware
 
 PRODUCT_COPY_FILES := \
-    vendor/lge/hammerhead/others/libvss_nv_iface.so:system/vendor/lib/libvss_nv_iface.so \
-    vendor/lge/hammerhead/others/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/lge/hammerhead/others/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/hammerhead/others/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/lge/hammerhead/others/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/lge/hammerhead/others/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
@@ -44,9 +41,9 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/others/libvdmfumo.so:system/vendor/lib/libvdmfumo.so \
     vendor/lge/hammerhead/others/libvss_common_core.so:system/vendor/lib/libvss_common_core.so \
     vendor/lge/hammerhead/others/libvss_common_idl.so:system/vendor/lib/libvss_common_idl.so \
-    vendor/lge/hammerhead/others/libvss_common_idl.so:system/vendor/lib/libvss_common_iface.so \
+    vendor/lge/hammerhead/others/libvss_common_iface.so:system/vendor/lib/libvss_common_iface.so \
     vendor/lge/hammerhead/others/libvss_nv_core.so:system/vendor/lib/libvss_nv_core.so \
-    vendor/lge/hammerhead/others/libvss_nv_core.so:system/vendor/lib/libvss_nv_idl.so \
-    vendor/lge/hammerhead/others/libvss_nv_core.so:system/vendor/lib/libvss_nv_iface.so \
+    vendor/lge/hammerhead/others/libvss_nv_idl.so:system/vendor/lib/libvss_nv_idl.so \
+    vendor/lge/hammerhead/others/libvss_nv_iface.so:system/vendor/lib/libvss_nv_iface.so \
     vendor/lge/hammerhead/others/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/lge/hammerhead/others/libwvm.so:system/vendor/lib/libwvm.so
