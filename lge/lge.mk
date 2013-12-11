@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/lge/sensor_def_hh.conf:system/etc/sensor_def_hh.conf:lge \
     vendor/lge/hammerhead/lge/Speaker_cal.acdb:system/etc/Speaker_cal.acdb:lge \
     vendor/lge/hammerhead/lge/serviceitems.jar:system/framework/serviceitems.jar:lge \
+    vendor/lge/hammerhead/lge/vss_init:system/vendor/bin/vss_init:lge \
     vendor/lge/hammerhead/lge/bu24205_LGIT_VER_2_DATA1.bin:system/vendor/firmware/bu24205_LGIT_VER_2_DATA1.bin:lge \
     vendor/lge/hammerhead/lge/bu24205_LGIT_VER_2_DATA2.bin:system/vendor/firmware/bu24205_LGIT_VER_2_DATA2.bin:lge \
     vendor/lge/hammerhead/lge/bu24205_LGIT_VER_2_DATA3.bin:system/vendor/firmware/bu24205_LGIT_VER_2_DATA3.bin:lge \
@@ -41,5 +42,11 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/lge/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02:lge \
     vendor/lge/hammerhead/lge/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03:lge \
     vendor/lge/hammerhead/lge/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt:lge \
-    vendor/lge/hammerhead/lge/libAKM8963.so:system/vendor/lib/libAKM8963.so:lge
+    vendor/lge/hammerhead/lge/libAKM8963.so:system/vendor/lib/libAKM8963.so:lge \
+    vendor/lge/hammerhead/lge/libvss_common_core.so:system/vendor/lib/libvss_common_core.so:lge \
+    vendor/lge/hammerhead/lge/libvss_common_idl.so:system/vendor/lib/libvss_common_idl.so:lge \
+    vendor/lge/hammerhead/lge/libvss_common_iface.so:system/vendor/lib/libvss_common_iface.so:lge \
+    vendor/lge/hammerhead/lge/libvss_nv_core.so:system/vendor/lib/libvss_nv_core.so:lge \
+    vendor/lge/hammerhead/lge/libvss_nv_idl.so:system/vendor/lib/libvss_nv_idl.so:lge \
+    vendor/lge/hammerhead/lge/libvss_nv_iface.so:system/vendor/lib/libvss_nv_iface.so:lge
 
