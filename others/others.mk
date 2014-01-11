@@ -24,9 +24,6 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/others/widevine.b02:system/vendor/firmware/widevine.b02 \
     vendor/lge/hammerhead/others/widevine.b03:system/vendor/firmware/widevine.b03 \
     vendor/lge/hammerhead/others/widevine.mdt:system/vendor/firmware/widevine.mdt \
-    vendor/lge/hammerhead/others/TimeService.apk:system/app/TimeService.apk \
-    vendor/lge/hammerhead/others/shutdownlistener.apk:system/app/shutdownlistener.apk \
-    vendor/lge/hammerhead/others/OmaDmclient.apk:system/app/OmaDmclient.apk \
     vendor/lge/hammerhead/others/DxHDCP.cfg:system/etc/DxHDCP.cfg \
     vendor/lge/hammerhead/others/dxhdcp2.b00:system/vendor/firmware/discretix/dxhdcp2.b00 \
     vendor/lge/hammerhead/others/dxhdcp2.b01:system/vendor/firmware/discretix/dxhdcp2.b01 \
@@ -38,4 +35,5 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/others/libvdmfumo.so:system/vendor/lib/libvdmfumo.so \
     vendor/lge/hammerhead/others/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/lge/hammerhead/others/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/lge/hammerhead/others/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/lge/hammerhead/others/libmmcamera_interface.so:system/lib/libmmcamera_interface.so

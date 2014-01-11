@@ -15,9 +15,6 @@
 
 # LGE blob(s) necessary for Hammerhead hardware
 PRODUCT_COPY_FILES := \
-    vendor/lge/hammerhead/lge/qcrilmsgtunnel.apk:system/app/qcrilmsgtunnel.apk:lge \
-    vendor/lge/hammerhead/lge/SprintHiddenMenu.apk:system/app/SprintHiddenMenu.apk:lge \
-    vendor/lge/hammerhead/lge/UpdateSetting.apk:system/app/UpdateSetting.apk:lge \
     vendor/lge/hammerhead/lge/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb:lge \
     vendor/lge/hammerhead/lge/General_cal.acdb:system/etc/General_cal.acdb:lge \
     vendor/lge/hammerhead/lge/Global_cal.acdb:system/etc/Global_cal.acdb:lge \
