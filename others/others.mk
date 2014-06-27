@@ -36,5 +36,4 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/others/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/lge/hammerhead/others/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/hammerhead/others/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/lge/hammerhead/others/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    vendor/lge/hammerhead/others/QuickBoot.apk:system/app/QuickBoot.apk
+    vendor/lge/hammerhead/others/libmmcamera_interface.so:system/lib/libmmcamera_interface.so
