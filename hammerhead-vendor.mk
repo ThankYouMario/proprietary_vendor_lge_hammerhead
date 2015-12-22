@@ -14,16 +14,20 @@
 
 # Live wallpaper packages
 PRODUCT_PACKAGES := \
-    Launcher3 \
     LiveWallpapers \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \
     VisualizationWallpapers \
     librs_jni
 
-# Publish that we support the live wallpaper feature.
-PRODUCT_COPY_FILES := \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
+# Apps
+PRODUCT_PACKAGES += \
+    OmaDmclient \
+    qcrilmsgtunnel \
+    SprintHiddenMenu \
+    shutdownlistener \
+    TimeService \
+    UpdateSetting
 
 $(call inherit-product, vendor/lge/hammerhead/hammerhead-vendor-blobs.mk)
 
