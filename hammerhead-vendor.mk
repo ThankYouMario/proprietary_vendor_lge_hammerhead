@@ -23,11 +23,16 @@ DEVICE_PACKAGE_OVERLAYS := vendor/lge/hammerhead/overlay
 
 # Apps
 PRODUCT_PACKAGES += \
-    OmaDmclient \
     qcrilmsgtunnel \
     shutdownlistener \
-    SprintHiddenMenu \
     TimeService \
-    UpdateSetting
+    UpdateSetting \
+    OmaDmclient \
+    SprintHiddenMenu
+
+
+# Libs
+PRODUCT_PACKAGES += \
+    libmm-abl
 
 $(call inherit-product, vendor/lge/hammerhead/hammerhead-vendor-blobs.mk)

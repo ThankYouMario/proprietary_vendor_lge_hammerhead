@@ -1,4 +1,5 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -43,10 +44,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/lge/hammerhead/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/lge/hammerhead/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
-    vendor/lge/hammerhead/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/lge/hammerhead/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/lge/hammerhead/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/lge/hammerhead/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+    vendor/lge/hammerhead/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/lge/hammerhead/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/lge/hammerhead/proprietary/etc/permissions/serviceitems.xml:system/etc/permissions/serviceitems.xml \
     vendor/lge/hammerhead/proprietary/etc/qcril.db:system/etc/qcril.db \
@@ -54,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/lge/hammerhead/proprietary/framework/serviceitems.jar:system/framework/serviceitems.jar \
     vendor/lge/hammerhead/proprietary/lib/hw/flp.msm8974.so:system/lib/hw/flp.msm8974.so \
-    vendor/lge/hammerhead/proprietary/lib/hw/gps.msm8974.so:system/lib/hw/gps.msm8974.so \
     vendor/lge/hammerhead/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_imx179_common.so:system/lib/libchromatix_imx179_common.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_imx179_default_video.so:system/lib/libchromatix_imx179_default_video.so \
@@ -64,27 +64,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_mt9m114b_default_video.so:system/lib/libchromatix_mt9m114b_default_video.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_mt9m114b_preview.so:system/lib/libchromatix_mt9m114b_preview.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_mt9m114b_snapshot.so:system/lib/libchromatix_mt9m114b_snapshot.so \
-    vendor/lge/hammerhead/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
-    vendor/lge/hammerhead/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
-    vendor/lge/hammerhead/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-    vendor/lge/hammerhead/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    vendor/lge/hammerhead/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-    vendor/lge/hammerhead/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/lge/hammerhead/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/lge/hammerhead/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_hdr_lib.so:system/lib/libmmcamera_hdr_lib.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_image_stab.so:system/lib/libmmcamera_image_stab.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_imx179.so:system/lib/libmmcamera_imx179.so \
-    vendor/lge/hammerhead/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_mt9m114b.so:system/lib/libmmcamera_mt9m114b.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
-    vendor/lge/hammerhead/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/lge/hammerhead/proprietary/lib/libmmQSM.so:system/lib/libmmQSM.so \
     vendor/lge/hammerhead/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
-    vendor/lge/hammerhead/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/lge/hammerhead/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-    vendor/lge/hammerhead/proprietary/lib/librpmb.so:system/lib/librpmb.so \
-    vendor/lge/hammerhead/proprietary/lib/libssd.so:system/lib/libssd.so \
     vendor/lge/hammerhead/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/lge/hammerhead/proprietary/lib/libxml.so:system/lib/libxml.so \
     vendor/lge/hammerhead/proprietary/vendor/bin/vss_init:system/vendor/bin/vss_init \
@@ -106,7 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/vendor/firmware/adsp.mdt:system/vendor/firmware/adsp.mdt \
     vendor/lge/hammerhead/proprietary/vendor/firmware/bcm2079x-b5_firmware.ncd:system/vendor/firmware/bcm2079x-b5_firmware.ncd \
     vendor/lge/hammerhead/proprietary/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd \
-    vendor/lge/hammerhead/proprietary/vendor/firmware/bcm4335c0.hcd:system/vendor/firmware/bcm4335c0.hcd \
     vendor/lge/hammerhead/proprietary/vendor/firmware/bu24205_LGIT_VER_2_DATA1.bin:system/vendor/firmware/bu24205_LGIT_VER_2_DATA1.bin \
     vendor/lge/hammerhead/proprietary/vendor/firmware/bu24205_LGIT_VER_2_DATA2.bin:system/vendor/firmware/bu24205_LGIT_VER_2_DATA2.bin \
     vendor/lge/hammerhead/proprietary/vendor/firmware/bu24205_LGIT_VER_2_DATA3.bin:system/vendor/firmware/bu24205_LGIT_VER_2_DATA3.bin \
@@ -145,10 +131,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-    vendor/lge/hammerhead/proprietary/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/hw/sensors.msm8974.so:system/vendor/lib/hw/sensors.msm8974.so \
-    vendor/lge/hammerhead/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
@@ -166,14 +150,18 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/lge/hammerhead/proprietary/vendor/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libDxHdcp.so:system/vendor/lib/libDxHdcp.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libFuzzmmstillomxenc.so:system/vendor/lib/libFuzzmmstillomxenc.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
@@ -182,6 +170,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libloc_api_v02.so:system/vendor/lib/libloc_api_v02.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libloc_ds_api.so:system/vendor/lib/libloc_ds_api.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
@@ -201,6 +190,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
@@ -212,14 +203,20 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/lge/hammerhead/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
+    vendor/lge/hammerhead/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
@@ -236,5 +233,4 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
     vendor/lge/hammerhead/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/lge/hammerhead/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/lge/hammerhead/proprietary/xbin/wlutil:system/xbin/wlutil
+    vendor/lge/hammerhead/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
