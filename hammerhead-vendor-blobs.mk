@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/lge/hammerhead/proprietary/framework/serviceitems.jar:system/framework/serviceitems.jar \
     vendor/lge/hammerhead/proprietary/lib/hw/flp.msm8974.so:system/lib/hw/flp.msm8974.so \
+    vendor/lge/hammerhead/proprietary/lib/hw/gps.msm8974.so:system/lib/hw/gps.msm8974.so \
     vendor/lge/hammerhead/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_imx179_common.so:system/lib/libchromatix_imx179_common.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_imx179_default_video.so:system/lib/libchromatix_imx179_default_video.so \
@@ -64,6 +65,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_mt9m114b_default_video.so:system/lib/libchromatix_mt9m114b_default_video.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_mt9m114b_preview.so:system/lib/libchromatix_mt9m114b_preview.so \
     vendor/lge/hammerhead/proprietary/lib/libchromatix_mt9m114b_snapshot.so:system/lib/libchromatix_mt9m114b_snapshot.so \
+    vendor/lge/hammerhead/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    vendor/lge/hammerhead/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/lge/hammerhead/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_hdr_lib.so:system/lib/libmmcamera_hdr_lib.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_image_stab.so:system/lib/libmmcamera_image_stab.so \
     vendor/lge/hammerhead/proprietary/lib/libmmcamera_imx179.so:system/lib/libmmcamera_imx179.so \
